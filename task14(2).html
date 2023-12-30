@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transcation</title>
+    <style>
+        .box{
+            height: 320px;
+            width: 400px;
+            padding: 20px;
+            background-color: rgb(247, 201, 142);
+        }
+        .box1{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: rgb(182, 252, 112);
+            align-items: center;
+            /* transition: transform 3s 1s red ease; */
+        }
+        .box1:hover{
+            /* transform: rotateZ(50deg); */
+            /* transition-timing-function: ; */
+            width: 90px;
+            transition : all 1s 1s ease-in;
+        }
+        .box2{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: rgb(255, 208, 0);
+            align-items: center;
+        }
+        .box2:hover{
+            width: 150px;
+            transition : all 1s 1s ease-out;
+        }
+        .box3{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: rgb(0, 183, 255);
+            align-items: center;
+        }
+        .box3:hover{
+            width: 200px;
+            transition : all 1s 1s linear;
+        }
+        .box4{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: rgb(166, 0, 255);
+            align-items: center;
+        }
+        .box4:hover{
+            width: 250px;
+            transition : all 1s 1s linear;
+        }
+        .box5{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: rgb(255, 111, 0);
+            align-items: center;
+        }
+        .box5:hover{
+            width: 280px;
+            transition : all 1s 1s steps(5) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">ease-in</div>
+        <br>
+        <div class="box2">ease-out</div>
+        <br>
+        <div class="box3">liner</div>
+        <br>
+        <div class="box4">ease-in-out</div>
+        <br>
+        <div class="box5">steps</div>
+    </div>
+</body>
+</html>
